@@ -1,5 +1,8 @@
-body{
+  body{
     text-align: center;
+    color: white;
+    background-color: black;
+    font-family: roboto;
 }
 
 #heading {
@@ -8,6 +11,8 @@ body{
     left: 0;
     right: 0;
     color: white;
+    font-family: domine;
+    background-color: rgb(21, 173, 16);
 }
 
 nav {
@@ -19,8 +24,20 @@ nav {
     margin-top:150px;
 }
 
+/* clear element example 
+row:after{
+    text:
+    both
+} */
 
-@media screen and (max-width: 800px) {
-}
+/* utilities css example
+.txt-center{
+    text-align: center;
+} */
 
-/* New line */
+
+@media screen and (max-width: 830px) {
+    [class=col-50] {
+        width=50%
+        
+    }
