@@ -109,11 +109,40 @@ Is a short set of CSS rules that resets the styling of all HTML elements to a co
     -o-background-size: cover;
   }
   
+  
   header h1 {
     color: white;
-    margin-top: 10%;
+    margin-top: 38%;
     font-size: 214%;
   }
+
+  header nav {
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    text-align: left;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.myname {
+  font-size: 135%;
+  font-family: IBM Plex Serif;
+}
+
+.navbar {
+  list-style: none;
+  float: right;
+}
+
+li {
+  display: inline-block;
+}
+
+
+
   
   
   /* -------------------------------------
