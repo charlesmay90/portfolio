@@ -72,6 +72,10 @@ body {
     border: 3px solid white;
 }
 
+.show-print-only {
+    display: none;
+  }
+
 a {
     text-decoration: none;
 }
@@ -82,6 +86,7 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
 }
 
 input, select, button {
@@ -184,7 +189,6 @@ header nav div.myname {
 header nav ul.navbar {
     list-style: none;
     float: right;
-    display: inline-block;
     width: auto;
     margin-top: 5px;
     margin-right: 10px;
@@ -201,6 +205,7 @@ header nav ul.navbar li a {
 
 header nav ul.navbar li a i {
     margin-right: 5px;
+    color: #397e9c;
 }
 
 /* -------------------------------------
@@ -225,6 +230,13 @@ section h2 {
     border-bottom: 1px solid #ddd;
 }
 
+section.about h2.about-heading img.about-image {
+    float: right;
+    margin-right: 20px;
+    width: 32%;
+    border-radius: 15px;
+}
+
 section.skills div.logo-container figure.figure-skills {
     display: inline-block;
     width: 30%;
@@ -235,6 +247,62 @@ section.skills div.logo-container figure.figure-skills {
 
 section.skills div.logo-container figure.figure-skills img {
     width: 100%;
+}
+
+section.projects div.project-section {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+section.projects div.project-section ul.project-skills li {
+    margin-top: 20px;
+    display: inline-block;
+    width: auto;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+
+section.projects div.project-section div.project-column img {
+    width: 100%;
+}
+
+section.projects div.project-section div.project-column ul.project-buttons {
+    display: block;
+    width: 100%;
+    margin: 20px;
+    list-style-type: none;
+}
+
+section.projects div.project-section div.project-column ul.project-buttons li {
+    display: inline-block;
+    margin: 20px;
+}
+
+section.projects div.project-section div.project-column ul.project-buttons li a {
+    display: block;
+    width: 125px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #397e9c;
+    ;
+    color: white;
+    text-decoration: none;
+}
+
+section.contact ul.contactlist {
+    text-align: center;
+    width: auto;
+    font-size: 200%;
+}
+
+section.contact ul.contactlist li {
+    display: inline-block;
+    width: 10%;
+}
+
+section.contact ul.contactlist li a i {
+    color: black;
 }
 
 /* -------------------------------------
@@ -283,6 +351,9 @@ footer {
     section {
         width: 95%;
     }
+    header nav ul.navbar li a span {
+        display: none;
+    }
 }
 
 /*Android landscape*/
@@ -298,6 +369,14 @@ footer {
 @media only screen and (max-width: 480px) {
     body {
         border: 3px solid green;
+    }
+    header nav div.myname, header nav ul.navbar {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 178%;
     }
 }
 

@@ -33,34 +33,53 @@
         <nav class='clearfix'>
             <div class='myname'>Charles May</div>
             <ul class='navbar'>
-                <li class='home'>
+                <li class='home show-web-only'>
                     <a href='#top'>
                         <i class='fa fa-home clickables'></i>
-                        Home
+                        <span>Home</span>
                     </a>
                 </li>
-                <li class='aboutme'>
+                <li class='aboutme show-web-only'>
                     <a href="#bio">
-                        <i class="fas fa-user-circle"></i> 
-                        Profile
+                        <i class="fas fa-user-circle"></i>
+                        <span>Profile</span>
                     </a>
                 </li>
-                <li class='myskills'>
+                <li class='myskills show-web-only'>
                     <a href="#skills">
                         <i class="fa fa-cog"></i>
-                        Skills
+                        <span>Skills</span>
                     </a>
                 </li>
-                <li class='myprojects'>
+                <li class='myprojects show-web-only'>
                     <a href="#projects">
                         <i class="fa fa-briefcase"></i>
-                        Projects
+                        <span>Projects</span>
                     </a>
                 </li>
-                <li class='contactinfo'>
+                <li class="show-print-only">
+                    <a href="https://evanpoe.github.io/portfolio/">Portfolio Page: evanpoe.github.io/portfolio/
+                    </a>
+                </li>
+                <li class="show-print-only">
+                    <a href="mailto:evanpoe91@yahoo.com?subject=Responding%20to%20Your%20Portfolio!">
+                        <i class="fas fa-envelope"></i> EvanPoe91@yahoo.com
+                    </a>
+                </li>
+                <li class="show-print-only">
+                    <a href="https://github.com/EvanPoe">
+                        <i class="fab fa-github"></i> GitHub.com/EvanPoe
+                    </a>
+                </li>
+                <li class="show-print-only">
+                    <a href="www.linkedin.com/in/evan-poe-full-stack-developer">
+                        <i class="fab fa-linkedin"></i> www.linkedin.com/in/evan-poe-full-stack-developer
+                    </a>
+                </li>
+                <li class='contactinfo show-web-only'>
                     <a href="#contact">
                         <i class="fa fa-envelope"></i>
-                        Contact
+                        <span>Contact</span>
                     </a>
                 </li>
             </ul>
@@ -70,11 +89,14 @@
         </h1>
     </header>
     <section class='about' id='bio'>
-        <h2 class='about heading'>
-            About Me
+        <h2 class='about-heading'>
+            <i class="fas fa-user-circle"></i> About
+
+            <img class='about-image' src="images/Pineapple selfie.jpeg" alt="Charles">
         </h2>
         <p class='bio'>
-            I am always fascinated how working on a project as a team can make many moving parts all come together to work seamlessly. I am a great believer
+            I am always fascinated how working on a project as a team can make many moving parts all come together to
+            work seamlessly. I am a great believer
             that technology is the steppingstone to a more prosperous future for humanity.
             <br></br>
             Outside of coding I am greatly interested in music, movies, and travel among many other things.
@@ -82,7 +104,7 @@
     </section>
     <section class='skills' id='skills'>
         <h2 class='skills heading'>
-            Coding Skills
+            <i class="fa fa-cog"></i> Skills
         </h2>
         <div class="logo-container">
             <figure class="figure-skills">
@@ -112,13 +134,132 @@
     </section>
     <section class='projects' id='projects'>
         <h2 class='projects heading'>
-            My Projects
+            <i class="fa fa-briefcase"></i> Projects
         </h2>
+        <h4>Musicality</h4>
+        <div class="project-section">
+            <div class="project-column">
+                <a href="https://charlesmay90.github.io/band-search-api-capstone/" target="_blank">
+                    <img class="musicality-img" src="images/musicality.png"
+                        alt="Discover more about your favorite bands">
+                </a>
+            </div>
+
+            <div class="project-column">
+                <p class="app-description">
+                    Musicality is an interactive application that allows users to search multiple music related websites
+                    at once. Users can type in one of their favorite bands or artists and get a list of Youtube search
+                    results, upcoming live concerts through Ticket master, as well as a link to the band wikipedia page.
+                    It's a one stop shop for all music lovers.
+                </p>
+                <ul class="project-skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>API</li>
+                </ul>
+                <ul class="project-buttons show-web-only">
+                    <li>
+                        <a href="https://charlesmay90.github.io/band-search-api-capstone/" target="_blank">
+                            <i class="fas fa-desktop"></i>
+                            Demo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/charlesmay90/band-search-api-capstone" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                    </li>
+                </ul>
+                <ul class="project-buttons show-print-only">
+                    <li>
+                        <i class="fas fa-desktop"></i> https://charlesmay90.github.io/band-search-api-capstone/
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i> https://github.com/charlesmay90/band-search-api-capstone
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <h4 class='project-name'>Virus Quiz App</h4>
+        <div class="project-section">
+            <div class="project-column">
+                <a href="https://charlesmay90.github.io/Virus-Quiz-App/" target="_blank">
+                    <img class="quiz-img" src="images/virus-quiz-app.png" alt="Test your knowledge about diseases">
+                </a>
+            </div>
+
+            <div class="project-column">
+                <p class="app-description">
+                    This short but informative quiz application about the history of deadly diseases will test your
+                    basic knowledge of plagues that have devestated humanity. Have a go and see if you can answer all
+                    the questions correctly!
+                </p>
+                <ul class="project-skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <ul class="project-buttons show-web-only">
+                    <li>
+                        <a href="https://charlesmay90.github.io/Virus-Quiz-App/" target="_blank">
+                            <i class="fas fa-desktop"></i>
+                            Demo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/charlesmay90/Virus-Quiz-App" target="_blank">
+                            <i class="fab fa-github"></i>
+                            Code
+                        </a>
+                    </li>
+                </ul>
+                <ul class="project-buttons show-print-only">
+                    <li>
+                        <i class="fas fa-desktop"></i> https://charlesmay90.github.io/Virus-Quiz-App/
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i> https://github.com/charlesmay90/Virus-Quiz-App
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </section>
-    <section class='contact' id='contact'></section>
+    <section class='contact' id='contact'>
+        <ul class='contactlist'>
+            <li class='email'>
+                <a href="mailto:charlesmay90@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </li>
+            <li class='linked in'>
+                <a href="https://www.linkedin.com/in/charlie-may-1a5901201/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class='github'>
+                <a href="https://github.com/charlesmay90" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </section>
     <footer>
         © copyright Charles May 2020-2021
     </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R6FR6F8X4Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-R6FR6F8X4Y');
+    </script>
 </body>
 
 </html>
