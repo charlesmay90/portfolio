@@ -24,12 +24,6 @@ Landing
 :-------------------------:
 ![Landing Page](/github-images/screenshots/login-page-screenshot.png)
 
-
-## Functionality
-The app's functionality includes:
-* Every User has the ability to create an account
-
-
 ## Technology
 * Front-End: HTML5, CSS3, JavaScript ES6, jQuery, API
 
